@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Request a dental appointment with Dr Johnjohnson Dental Practice using our appointment form.">
+        <title>Appointments | Dr Johnjohnson Dental Practice</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js" defer></script>
+    </head>
+
+    <body>
+    <header class="site-header">
+    <a class="brand" href="index.html">
+        <span class="brand-mark">✚</span>
+        <span>
+            <strong>Dr Johnjohnson</strong>
+            <small>Dental Practice</small>
+        </span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a class="active" href="appointment.html">Appointments</a>
+        <a href="clientsReviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    </header>
+<main>
+    <section class="page-hero">
+        <p class="eyebrow">PLAN YOUR VISIT</p>
+        <h1>Request an appointment</h1>
+        <p>Complete the form below. Your request will be saved in this browser for this website demo.</p>
+    </section>
+
+<section class="section two-column">
+    <div class="form-card">
+        <h2>Appointment details</h2>
+        <p class="muted">All fields are required unless marked optional.</p>
+<form id="appointmentForm" novalidate>
+<label for="patientName">Full name</label>
+<input id="patientName" name="patientName" type="text" required minlength="2" autocomplete="name" placeholder="Enter your full name">
+<label for="patientEmail">Email address</label>
+<input id="patientEmail" name="patientEmail" type="email" required autocomplete="email" placeholder="you@example.com">
+<label for="patientPhone">South African mobile number</label>
+<input id="patientPhone" name="patientPhone" type="tel" required inputmode="tel" placeholder="e.g. 0712345678">
+<label for="appointmentDate">Preferred date</label>
+<input id="appointmentDate" name="appointmentDate" type="date" required>
+<label for="appointmentTime">Preferred time</label>
+<input id="appointmentTime" name="appointmentTime" type="time" required>
+<label for="treatment">Treatment</label>
+<select id="treatment" name="treatment" required>
+    <option value="">Select a treatment</option>
+    <option>General Check-up</option>
+    <option>Teeth Cleaning</option>
+    <option>Tooth Extraction</option>
+    <option>Dental Filling</option>
+    <option>Whitening</option>
+    <option>Braces Consultation</option>
+</select>
+<label for="appointmentNotes">Additional notes (optional)</label>
+<textarea id="appointmentNotes" name="appointmentNotes" rows="3" maxlength="500" placeholder="Anything you would like us to know"></textarea>
+<button class="btn full-width" type="submit">Submit appointment request</button>
+<p id="appointmentMessage" class="form-message" role="status" aria-live="polite"></p>
+</form>
+</div>
+</main>
+<footer class="site-footer">
+    <div>
+        <a class="brand footer-brand" href="index.html">
+            <span class="brand-mark">✚</span>
+            <span>
+                <strong>Dr Johnjohnson</strong>
+                <small>Dental Practice</small>
+            </span>
+        </a>
+        <p>Professional care. Healthier smiles.</p>
+    </div>
+    <div class="footer-links">
+        <a href="services.html">Services</a>
+        <a href="clientsReviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <p class="copyright">© <span data-year>
+
+    </span>
+    Dr Johnjohnson Dental Practice. All rights reserved.</p>
+    <p class="clock-line">
+        South African time: 
+        <span data-clock>
+
+        </span>
+    </p>
+</footer>
+</body>
+</html>

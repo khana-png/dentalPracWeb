@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Contact Dr Johnjohnson Dental Practice with a question or request a call back.">
+        <title>Contact | Dr Johnjohnson Dental Practice</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+<header class="site-header">
+    <a class="brand" href="index.html">
+        <span class="brand-mark">✚</span>
+        <span>
+            <strong>Dr Johnjohnson</strong>
+            <small>Dental Practice</small>
+        </span>
+    </a><button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="appointment.html">Appointments</a>
+        <a href="clientsReviews.html">Reviews</a>
+        <a class="active" href="contact.html">Contact</a>
+    </nav>
+</header>
+<main>
+    <section class="page-hero">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h1>We’d love to hear from you</h1>
+        <p>Send a message using the form below. Please do not include sensitive medical details.           
+        </p>
+    </section>
+<section class="section two-column">
+    <div class="form-card">
+        <h2>Send us a message</h2>
+        <form id="contactForm" novalidate>
+            <label for="contactName">Full name</label>
+            <input id="contactName" name="name" type="text" required minlength="2" autocomplete="name" placeholder="Your name">
+            <label for="contactEmail">Email address</label>
+            <input id="contactEmail" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+            <label for="contactSubject">Subject</label>
+            <select id="contactSubject" name="subject" required>
+                <option value="">Choose a subject</option>
+                <option>General enquiry</option>
+                <option>Appointment question</option>
+                <option>Service information</option>
+                <option>Website feedback</option>
+            </select>
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" rows="5" required minlength="10" maxlength="1000" placeholder="How can we help?"></textarea>
+            <button class="btn full-width" type="submit">Validate message</button>
+            <p id="contactFeedback" class="form-message" role="status" aria-live="polite"></p>
+        </form>
+    </div>
+<aside class="side-panel">
+    <h2>Practice information</h2>
+    <p>Use the contact details supplied by the practice owner before publishing this site.</p>
+    <div class="contact-detail">
+        <span>✉</span>
+        <div><strong>Email</strong>
+            <p>Add the practice email address</p>
+        </div>
+    </div>
+    <div class="contact-detail">
+        <span>☎</span>
+        <div><strong>Telephone</strong><p>Add the practice telephone number</p></div>
+    </div>
+    <div class="contact-detail">
+        <span>⌖</span>
+        <div><strong>Address</strong><p>Add the practice street address</p></div>
+    </div>
+    <p class="small-note">The contact form validates your message in the browser; it will not email anyone until a form service or backend is connected.</p>
+</aside>
+
+<div class="map-container" id="mapContainer">
+  <div class="map-header">
+    <h3>Find our practice</h3>
+    <button
+      type="button"
+      id="expandMapBtn"
+      aria-expanded="false"
+      aria-controls="practiceMap"
+    >
+      ⛶ Expand map
+    </button>
+  </div>
+
+  <div id="practiceMap" role="application"
+       aria-label="Map showing the practice location">
+  </div>
+
+  <p class="map-caption">
+    Visit our practice or get directions.
+  </p>
+</div>
+
+<!-- Leaflet CSS and JavaScript -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+</section>
+</main>
+<footer class="site-footer">
+    <div>
+        <a class="brand footer-brand" href="index.html">
+            <span class="brand-mark">✚</span>
+            <span>
+                <strong>Dr Johnjohnson</strong>
+                <small>Dental Practice</small>
+            </span>
+        </a>
+        <p>Professional care. Healthier smiles.</p>
+    </div>
+    <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="appointment.html">Appointments</a>
+    </div>
+    <p class="copyright">© <span data-year></span> Dr Johnjohnson Dental Practice. All rights reserved.</p>
+    <p class="clock-line">South African time: <span data-clock></span></p>
+</footer>
+</body>
+</html>
